@@ -10,9 +10,9 @@ Rails.application.routes.draw do
     resources :reviews
   end
 
-  # devise_scope :user do
-  #   get 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
-  # end
+  devise_scope :user do
+    get 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session_path
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
