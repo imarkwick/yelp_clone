@@ -42,13 +42,6 @@ feature 'restaurants' do
       	expect(page).to have_content 'error'
     	end
   	end
-
-    # it 'only if user is logged in' do
-    #   visit '/restaurants'
-    #   expect(page).not_to have_link('Sign out')
-    #   click_link 'Add a restaurant'
-    #   expect(page).to have_content 'error'
-    # end
 	end
 
 	context 'viewing restaurants' do
