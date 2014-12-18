@@ -30,6 +30,8 @@ gem 'devise'
 
 gem 'omniauth-facebook'
 
+gem 'rails_12factor'
+
 group :test do 
 	gem 'rspec-rails'
 	gem 'capybara'
