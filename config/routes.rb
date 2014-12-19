@@ -6,8 +6,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root to: 'restaurants#index' 
 
-  resources :restaurants do
-    resources :reviews
+  resources :restaurants, shallow: true do
+    resources :reviews do
+      resources :endorsements
+    end
   end
 
   devise_scope :user do
