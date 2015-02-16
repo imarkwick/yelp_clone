@@ -19,14 +19,31 @@ Users on the Yelp clone website can:
 - Can only leave one review per restaurant
 - Can delete their own reviews
 
-To view tests, run;
+## Technologies used:
+
+* Ruby
+* Rails
+* HTML5
+* JavaScript
+* AJAX
+* RSpec
+* PostgreSQL
+* Capybara
+
+## How to run tests:
 
 ```sh
+$ git clone https://github.com/imarkwick/yelp_clone.git
+$ cd yelp_clone
+$ bundle install
 $ rspec
 ```
 
-To open in the browser start the server and visit localhost/3000;
+## To run tests:
 
 ```sh
+$ git clone https://github.com/imarkwick/yelp_clone.git
+$ cd yelp_clone
+$ bundle install
 $ bin/rails s
 ```
